@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* BakerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BakerAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		800F2AE1150F512100054216 /* 72x72icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 800F2AE0150F512100054216 /* 72x72icon.png */; };
+		80439C5C15233A370030754C /* 114icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80439C5B15233A370030754C /* 114icon.png */; };
+		8085BC9414D69FAE00A6109D /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8085BC9314D69FAE00A6109D /* Default-Landscape~ipad.png */; };
+		8085BC9614D69FAF00A6109D /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8085BC9514D69FAF00A6109D /* Default-Portrait~ipad.png */; };
+		809D16F91542B7B5006B7199 /* Newsstand-Cover-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 809D16F71542B7B5006B7199 /* Newsstand-Cover-Icon.png */; };
+		80C44BFF151361A100B087F0 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 80C44BFE151361A100B087F0 /* Default-Portrait@2x~ipad.png */; };
+		80C44C01151361E400B087F0 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 80C44C00151361E400B087F0 /* Default-Landscape@2x~ipad.png */; };
+		9F4F07F411F8DE8200375A8C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F07F211F8DE8200375A8C /* RootViewController.m */; };
+		BF2F99401269379900E356EF /* book in Resources */ = {isa = PBXBuildFile; fileRef = BF2F993F1269379900E356EF /* book */; };
+		D2A198AA1375972600C6BE2F /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A198A91375972600C6BE2F /* IndexViewController.m */; };
+		D2A58308141EA59100E91BBF /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A58307141EA59100E91BBF /* Utils.m */; };
+		F4EC203812862D4D008E94D1 /* InterceptorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EC203712862D4D008E94D1 /* InterceptorWindow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* BakerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakerAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* BakerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakerAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* slon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* slon_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slon_Prefix.pch; sourceTree = "<group>"; };
+		800F2AE0150F512100054216 /* 72x72icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72icon.png; sourceTree = "<group>"; };
+		80439C5B15233A370030754C /* 114icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114icon.png; sourceTree = "<group>"; };
+		8085BC9314D69FAE00A6109D /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		8085BC9514D69FAF00A6109D /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		809D16F71542B7B5006B7199 /* Newsstand-Cover-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Newsstand-Cover-Icon.png"; sourceTree = "<group>"; };
+		80C44BFE151361A100B087F0 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		80C44C00151361E400B087F0 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* slon-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "slon-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9F4F07F111F8DE8200375A8C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		9F4F07F211F8DE8200375A8C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RootViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		BF2F993F1269379900E356EF /* book */ = {isa = PBXFileReference; lastKnownFileType = folder; path = book; sourceTree = "<group>"; };
+		D2A198A81375972600C6BE2F /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		D2A198A91375972600C6BE2F /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		D2A58306141EA59100E91BBF /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = lib/Utils.h; sourceTree = "<group>"; };
+		D2A58307141EA59100E91BBF /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = lib/Utils.m; sourceTree = "<group>"; };
+		F4EC203612862D4D008E94D1 /* InterceptorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterceptorWindow.h; sourceTree = "<group>"; };
+		F4EC203712862D4D008E94D1 /* InterceptorWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterceptorWindow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D2B5B1ED141EA44800C8C333 /* lib */,
+				D2A198A81375972600C6BE2F /* IndexViewController.h */,
+				D2A198A91375972600C6BE2F /* IndexViewController.m */,
+				9F4F07F111F8DE8200375A8C /* RootViewController.h */,
+				9F4F07F211F8DE8200375A8C /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* BakerAppDelegate.h */,
+				1D3623250D0F684500981E51 /* BakerAppDelegate.m */,
+				F4EC203612862D4D008E94D1 /* InterceptorWindow.h */,
+				F4EC203712862D4D008E94D1 /* InterceptorWindow.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* slon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				80439C5B15233A370030754C /* 114icon.png */,
+				809D16F71542B7B5006B7199 /* Newsstand-Cover-Icon.png */,
+				80C44C00151361E400B087F0 /* Default-Landscape@2x~ipad.png */,
+				80C44BFE151361A100B087F0 /* Default-Portrait@2x~ipad.png */,
+				800F2AE0150F512100054216 /* 72x72icon.png */,
+				BF2F993F1269379900E356EF /* book */,
+				8085BC9514D69FAF00A6109D /* Default-Portrait~ipad.png */,
+				8085BC9314D69FAE00A6109D /* Default-Landscape~ipad.png */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* slon_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* slon-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2B5B1ED141EA44800C8C333 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D2A58306141EA59100E91BBF /* Utils.h */,
+				D2A58307141EA59100E91BBF /* Utils.m */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* slon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "slon" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = slon;
+			productName = Baker;
+			productReference = 1D6058910D05DD3D006BFB54 /* slon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "slon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* slon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2F99401269379900E356EF /* book in Resources */,
+				8085BC9414D69FAE00A6109D /* Default-Landscape~ipad.png in Resources */,
+				8085BC9614D69FAF00A6109D /* Default-Portrait~ipad.png in Resources */,
+				800F2AE1150F512100054216 /* 72x72icon.png in Resources */,
+				80C44BFF151361A100B087F0 /* Default-Portrait@2x~ipad.png in Resources */,
+				80C44C01151361E400B087F0 /* Default-Landscape@2x~ipad.png in Resources */,
+				80439C5C15233A370030754C /* 114icon.png in Resources */,
+				809D16F91542B7B5006B7199 /* Newsstand-Cover-Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* BakerAppDelegate.m in Sources */,
+				9F4F07F411F8DE8200375A8C /* RootViewController.m in Sources */,
+				F4EC203812862D4D008E94D1 /* InterceptorWindow.m in Sources */,
+				D2A198AA1375972600C6BE2F /* IndexViewController.m in Sources */,
+				D2A58308141EA59100E91BBF /* Utils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = slon_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "slon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = slon;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "slon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "slon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

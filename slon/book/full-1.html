@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+            <title>Slon • Содержание</title>
+
+            <script src="js/jquery.js" type="text/javascript"></script>
+            <script src="js/slon.js" type="text/javascript"></script>
+            <script>
+                $.preLoadImages("images/article-10/items/1.jpg", "images/article-10/items/2.jpg", "images/article-10/items/3.jpg", "images/article-10/items/4.jpg", "images/article-10/items/5.jpg", "images/article-10/items/6.jpg", "images/article-10/items/7.jpg", "images/article-10/items/8.jpg", "images/article-10/items/9.jpg", "images/article-10/items/10.jpg");
+
+                function rotateWithParam(page, toOrientation){
+                    if('portrait' == toOrientation){
+                        $('.page div').show();
+                        $.preLoadImages("images/article-10/v/"+page+".jpg");
+                    } else {
+                        $('.page div').hide();
+                        $.preLoadImages("images/article-10/h/"+page+".jpg");
+                    }
+                    willRotate(toOrientation);
+                }
+            </script>
+
+            <link href="styles/slon.css" rel="stylesheet" type="text/css" />
+            <style>
+                #page_1.landscape { background: url("images/article-10/h/1.jpg"); }
+                #page_1.portrait { background: url("images/article-10/v/1.jpg"); }
+
+                #page_2.landscape { background: url("images/article-10/h/2.jpg"); }
+                #page_2.portrait { background: url("images/article-10/v/2.jpg"); }
+                
+                .landscape div {
+                    display: none;
+                }
+            </style>
+    </head>
+    <body onload="loadOrientation();">
+        <script>
+            var arrowCoords = new Array();
+            arrowCoords[1] = new Array(50, 605);
+            arrowCoords[2] = new Array(280, 605);
+            arrowCoords[3] = new Array(520, 605);
+            arrowCoords[4] = new Array(170, 845);
+            arrowCoords[5] = new Array(395, 845);
+            arrowCoords[6] = new Array(50, 605);
+            arrowCoords[7] = new Array(280, 605);
+            arrowCoords[8] = new Array(520, 605);
+            arrowCoords[9] = new Array(170, 845);
+            arrowCoords[10] = new Array(395, 845);
+
+            function showDetails(div,id,aid){
+                $('.aa').attr('href', 'article-'+aid+'.html');
+                $('#'+div).html('<img src="images/article-10/items/'+id+'.jpg">');
+                if(6 > id){
+                    $('#arrow2').hide();
+                    $('#arrow1').css('left', arrowCoords[id][0]+'px');
+                    $('#arrow1').css('top', arrowCoords[id][1]+'px');
+                    $('#arrow1').show();
+                } else {
+                    $('#arrow1').hide();
+                    $('#arrow2').css('left', arrowCoords[id][0]+'px');
+                    $('#arrow2').css('top', arrowCoords[id][1]+'px');
+                    $('#arrow2').show();
+                }
+            }
+        </script>
+        <div class="page" id="page_1" style="position: relative;">
+            <a href="#" class="aa"><div style="position: absolute; top: 0; left: 0;" id="details1">&nbsp;</div></a>
+            <div onclick="showDetails('details1',1, 3);" style="position: absolute; top: 490px; z-index:0; left: 50px;"><img src="images/article-10/icons/1.png"></div>
+            <div onclick="showDetails('details1',2, 4);" style="position: absolute; top: 490px; z-index:0; left: 285px;"><img src="images/article-10/icons/2.png"></div>
+            <div onclick="showDetails('details1',3, 5);" style="position: absolute; top: 490px; z-index:0; left: 520px;"><img src="images/article-10/icons/3.png"></div>
+            <div onclick="showDetails('details1',4, 7);" style="position: absolute; top: 730px; z-index:0; left: 170px;"><img src="images/article-10/icons/4.png"></div>
+            <div onclick="showDetails('details1',5, 8);" style="position: absolute; top: 730px; z-index:0; left: 400px;"><img src="images/article-10/icons/5.png"></div>
+            <div id="arrow1" style="position: absolute; top: 0px; left: 0px; z-index: 9; display: none;"><img src="images/article-10/icons/arrow.png"></div>
+        </div>
+        <div class="page" id="page_2" style="position: relative;">
+            <a href="#" class="aa"><div style="position: absolute; top: 0; left: 0;" id="details2">&nbsp;</div></a>
+            <div onclick="showDetails('details2',6, 9);" style="position: absolute; top: 490px; z-index:0; left: 50px;"><img src="images/article-10/icons/6.png"></div>
+            <div onclick="showDetails('details2',7, 11);" style="position: absolute; top: 490px; z-index:0; left: 285px;"><img src="images/article-10/icons/7.png"></div>
+            <div onclick="showDetails('details2',8, 12);" style="position: absolute; top: 490px; z-index:0; left: 520px;"><img src="images/article-10/icons/8.png"></div>
+            <div onclick="showDetails('details2',9, 13);" style="position: absolute; top: 730px; z-index:0; left: 170px;"><img src="images/article-10/icons/9.png"></div>
+            <div onclick="showDetails('details2',10, 15);" style="position: absolute; top: 727px; z-index:0; left: 400px;"><img src="images/article-10/icons/10.png"></div>
+            <div id="arrow2" style="position: absolute; top: 0px; left: 0px; z-index: 9; display: none;"><img src="images/article-10/icons/arrow.png"></div>
+        </div>
+    </body>
+</html>

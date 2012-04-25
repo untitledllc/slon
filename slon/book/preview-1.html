@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+            <title>Slon • Содержание</title>
+            
+            <script src="js/jquery.js" type="text/javascript"></script>
+            <script src="js/slon.js" type="text/javascript"></script>
+            <script>
+                $.preLoadImages("images/article-10/v/1.jpg","images/article-10/h/1.jpg");
+            </script>
+            
+            <link href="styles/slon.css" rel="stylesheet" type="text/css" />
+            <style>
+                #page_1.landscape { background: url("images/article-10/h/1.jpg"); }
+                #page_1.portrait { background: url("images/article-10/v/1.jpg"); }
+                
+                #page_2.landscape { background: url("images/article-10/h/2.jpg"); }
+                #page_2.portrait { background: url("images/article-10/v/2.jpg"); }
+                </style>
+            </head>
+    <body>
+        <script>
+            function showDetails(div,id){
+                $('#'+div).html('<img src="images/article-10/items/'+id+'.jpg">');
+            }
+            </script>
+    <div id="root">
+        <div class="page" id="page_1" style="position: relative;">
+            <div style="position: absolute; top: 0; left: 0;" id="details1">&nbsp;</div>
+            <div onclick="showDetails('details1',1);" style="position: absolute; top: 490px; left: 50px;"><img src="images/article-10/icons/1.png"></div>
+            <div onclick="showDetails('details1',2);" style="position: absolute; top: 490px; left: 285px;"><img src="images/article-10/icons/2.png"></div>
+            <div onclick="showDetails('details1',3);" style="position: absolute; top: 490px; left: 520px;"><img src="images/article-10/icons/3.png"></div>
+            <div onclick="showDetails('details1',4);" style="position: absolute; top: 730px; left: 170px;"><img src="images/article-10/icons/4.png"></div>
+            <div onclick="showDetails('details1',5);" style="position: absolute; top: 730px; left: 400px;"><img src="images/article-10/icons/5.png"></div>
+        </div>
+        <div class="page" id="page_2" style="position: relative;">
+            <div style="position: absolute; top: 0; left: 0;" id="details2">&nbsp;</div>
+            <div onclick="showDetails('details2',6);" style="position: absolute; top: 490px; left: 50px;"><img src="images/article-10/icons/6.png"></div>
+            <div onclick="showDetails('details2',7);" style="position: absolute; top: 490px; left: 285px;"><img src="images/article-10/icons/7.png"></div>
+            <div onclick="showDetails('details2',8);" style="position: absolute; top: 490px; left: 520px;"><img src="images/article-10/icons/8.png"></div>
+            <div onclick="showDetails('details2',9);" style="position: absolute; top: 730px; left: 170px;"><img src="images/article-10/icons/9.png"></div>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,649 @@
+.landscape .ps{
+    width:1024px;
+    height: 768px;
+    overflow: hidden;
+    position: relative;
+}
+.portrait .ps {
+    width:768px;
+    height: 1024px;
+    overflow: hidden;
+    position: relative;
+}
+.landscape .start {
+    background: url(../images/rgd/intro_h.png) no-repeat 0 0;
+}
+.portrait .start {
+    background: url(../images/rgd/intro_v.png) no-repeat 0 0;
+}
+.landscape .allegro {
+    background: url(../images/rgd/allegro_h.png) no-repeat 0 0;
+}
+.portrait .allegro {
+    background:#fff url(../images/rgd/allegro_v.png) no-repeat 0 bottom;
+}
+.landscape .sapsan {
+    background: url(../images/rgd/sapsan_h.png) no-repeat 0 0;
+}
+.portrait .sapsan {
+    background:#fff url(../images/rgd/sapsan_v.png) no-repeat 0 bottom;
+}
+.landscape .vsm {
+    background:url(../images/rgd/vsm_h.png) no-repeat 0 0px;
+}
+.portrait .vsm {
+    background:url(../images/rgd/vsm_v.png) no-repeat 0 0px;
+}
+.header {
+    width:100%;
+    overflow: hidden;
+    height: 92px;
+}
+.logo {
+    background: url(../images/rgd/rgd-logo.jpg) no-repeat 0 0;
+    width:163px;
+    height: 107px;
+    margin: 38px 0 0 104px;
+}
+.portrait .vsm .content {
+    height: 100%;
+}
+.portrait .ps .logo {
+    margin: 38px 0 0 50px;
+}
+.menu {
+    width:100%;
+    background:url(../images/rgd/intro_h-menu.png) no-repeat right 0;
+    height:50px;
+}
+.allegro .menu {
+    width:100%;
+    height:59px;
+    background: none;
+}
+.sapsan .menu {
+    width:100%;
+    background:none;
+    height:60px;
+}
+.vsm .menu {
+    width:100%;
+    background:none;
+    height:60px;
+}
+.portrait .vsm .menu {
+    background:none;
+}
+
+.portrait .allegro .menu {
+    height: 60px;
+    background: none;
+}
+.portrait .sapsan .menu {
+    height: 60px;
+}
+.portrait .allegro .btn,
+.portrait .allegro .intro-text,
+.portrait .sapsan .btn,
+.portrait .sapsan .intro-text
+{
+    display: none;
+}
+.content {
+    position: relative;
+}
+.landscape .content {
+    margin: 0 62px;
+}
+.landscape .allegro .content,
+.landscape .sapsan .content,
+.landscape .vsm .content {
+    margin: 0;
+}
+.landscape .allegro .content {
+    margin-top:42px;
+}
+.intro-text {
+    color:#566169;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 16px;
+}
+.landscape .intro-text {
+    background: url(../images/rgd/text-into-h.png) no-repeat left top;
+    width:787px;
+    height: 177px;
+    padding: 26px 56px 0;
+}
+.landscape .allegro .intro-text {
+    background: url(../images/rgd/text-into-h-a.png) no-repeat left top;
+    width:788px;
+    height: 140px;
+    padding:5px 118px 0;
+}
+.landscape .sapsan .intro-text {
+    background: url(../images/rgd/text-into-h-s.png) no-repeat left top;
+    width:788px;
+    height: 140px;
+    padding:5px 118px 0;
+}
+.landscape .vsm .intro-text {
+    background: url(../images/rgd/text-into-h-vsm.png) no-repeat left top;
+    width:788px;
+    height: 215px;
+    padding:7px 118px 0;
+}
+.portrait .vsm .intro-text {
+    background: url(../images/rgd/text-into-v-vsm.png) no-repeat left top;
+    padding-top: 5px;
+    font-size: 14px;
+}
+.portrait .intro-text {
+    background: url(../images/rgd/text-into-v.png) no-repeat left top;
+    width:624px;
+    height: 223px;
+    padding: 22px 72px 0;
+}
+.intro-text span {
+    color: #c7180c;
+}
+.intro-list {
+    list-style: none;
+}
+.landscape .intro-list {
+    margin-left: -10px;
+}
+.list-item {
+    border:6px solid #c5cad3;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    background: #fff;
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.landscape .list-item {
+    float:left;
+    width:266px;
+    height: 305px;
+    margin-right: 4px;
+}
+.portrait .list-item {
+    margin: 0 35px 50px 0;
+    height: 122px;
+    overflow: hidden;
+}
+.portrait .list-item img,
+.portrait .list-item div {
+    float: left;
+}
+.item-name {
+    font-family: System sans-serif;
+    font-weight: bold;
+    font-size:18px ;
+}
+.landscape .item-name {
+    background: url(../images/rgd/list-item-desc.png) no-repeat 0 0;
+    width:249px;
+    height:36px;
+    color:#fff;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 18px;
+    padding: 13px 0 0 18px;
+}
+.portrait .item-name {
+    background: url(../images/rgd/list-item-desc-v.png) no-repeat 0 0;
+    width:175px;
+    height:77px;
+    color:#fff;
+    font-family: Myriad Pro, sans-serif;
+    font-size:22px;
+    padding: 45px 0 0 15px;
+}
+.page a.video-rgd {
+    width:200px !important;
+    height: 50px;
+    float:right;
+    margin:133px 153px 0 0;
+}
+.landscape .list-item img.v-v {
+    display: none;
+}
+.portrait .list-item img {
+    display: none;
+}
+.portrait .list-item img.v-v {
+    display: block
+}
+.list-item a {
+    text-decoration: none;
+}
+.item-description {
+    color: #566169;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.landscape .item-description {
+    padding: 5px 15px 0;
+}
+.landscape .allegro .btn-8 {
+    display:none;
+}
+.portrait .item-description {
+    width:210px;
+    padding:10px 15px;
+}
+.btn {
+    position: absolute;
+    background: url(../images/rgd/btn.png) no-repeat 0 0;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+.btn-1 {
+    left: 62px;
+    top:198px;
+}
+.btn-2 {
+    left: 203px;
+    top:138px;
+}
+.btn-3 {
+    left: 205px;
+    top:322px;
+}
+.btn-4 {
+    left: 357px;
+    top: 228px;
+}
+.btn-5 {
+    left: 505px;
+    top: 382px;
+}
+.btn-6 {
+    left: 539px;
+    top: 150px;
+}
+.btn-7 {
+    left: 755px;
+    top: 323px;
+}
+.btn-8 {
+    left:580px;
+    top:260px;
+}
+.block {
+    width:282px;
+    position: absolute;
+    background: #fff;
+    display: none;
+    opacity: 0;
+}
+.sapsan .block {
+    width:auto;
+    height: auto;
+    background: none;
+}
+.allegro .block {
+    width:auto;
+    height: auto;
+    background: none;
+}
+.block-1 {
+    left:105px;
+    top:200px;
+}
+.block-6 {
+    left:241px;
+    top:164px;
+}
+.block-3 {
+    left: 255px;
+    top: 230px;
+}
+.block-2 {
+    left:240px;
+    top:150px;
+}
+.block-4 {
+    left:390px;
+    top:150px;
+}
+.block-5 {
+    left:340px;
+    top:200px;
+}
+.block-7 {
+    left:461px;
+    top:180px;
+}
+.block-8 {
+    left:350px;
+    top:150px;
+}
+.portrait .menu a {
+    width:130px;
+}
+.menu a {
+    width:140px;
+    height:41px;
+    position: relative;
+    float:right;
+    margin:10px 0 0 0;
+}
+.menu a.vsm-link {
+    margin-right: 200px
+}
+.menu a.all-link {
+    margin-right: 55px
+}
+.menu a.sapsan-link {
+    margin-right: 45px
+}
+.portrait .menu a.vsm-link {
+    margin-right: 101px
+}
+.portrait .menu a.all-link {
+    margin-right: 45px;
+    width:108px;
+}
+.portrait .menu a.sapsan-link {
+    margin-right: 27px
+}
+.sapsan .block img {
+    -webkit-border-radius:7px;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+}
+.sapsan .block img.desc-img {
+    -webkit-border-radius:12px;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+}
+.sapsan .close {
+    right: 24px;
+    top: 14px;
+}
+.allegro .close {
+    right: 13px;
+    top: -3px;
+}
+
+.landscape .sapsan .content {
+    margin-top: 35px;
+}
+.close {
+    width:31px;
+    height: 31px;
+    position: absolute;
+    right: -13px;
+    top:-13px;
+    background: url(../images/rgd/close.png) no-repeat 0 0;
+    cursor: pointer;
+    z-index: 5;
+}
+.image {
+    position: relative;
+    width: 282px;
+    height: 140px;
+}
+.green, .white {
+    position: absolute;
+    background: #74c699;
+    left:0;
+    top:0;
+    width:141px;
+    height: 70px;
+}
+.white {
+    background: #fff;
+    right:0;
+    bottom:0;
+    left:auto;
+    top:auto;
+    opacity: 0.5;
+}
+.allegro-logo {
+    width:100%;
+    height: 70px;
+    background:#76beea url(../images/rgd/allegro-logo.png) no-repeat right top;
+}
+.description-block {
+    color: #48535b;
+    font-family: Myriad Pro, sans-serif;
+    padding: 27px 32px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.landscape .gallery-preview {
+    display: none;
+}
+.portrait .gallery-preview {
+    margin:41px 0 0 15px;
+    list-style: none;
+}
+.portrait .gallery-preview li {
+    float: left;
+    width:210px;
+    height: 178px;
+    margin: 0 12px 12px 0;
+}
+.landscape .gallery-wrap {
+    display: none !important;
+}
+.portrait .gallery-wrap {
+    display: none;
+    width:768px;
+    height:1024px;
+    background: url(../images/rgd/gall-bg.png) repeat 0 0;
+    position: absolute;
+    left:0;
+    top:0;
+    opacity: 0;
+}
+.gallery-wrap1 {
+    overflow: hidden;
+    width:702px;
+    height:468px;
+    margin: 337px 0 0 32px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gallery {
+    padding: 0 !important;
+}
+.portrait .gallery {
+    width:10000px;
+    overflow: hidden;
+    position: absolute;
+    top: -16px;
+    left: 0;
+}
+.portrait .gallery li {
+    float:left;
+    list-style: none;
+}
+.arr-btn-left, .arr-btn-right {
+    background: url(../images/rgd/btn-arr-left.png) no-repeat 0 0;
+    width:36px;
+    height:468px;
+    position: absolute;
+    left:0;
+}
+.arr-btn-right {
+    background: url(../images/rgd/btn-arr-right.png) no-repeat 0 0;
+    left:auto;
+    right:0;
+}
+.close-gall {
+    top: 324px !important;
+    right: 20px !important;
+}
+.about-vsm {
+    margin:-18px 0 0 55px;
+    list-style: none;
+}
+.portrait .about-vsm {
+    position: absolute;
+    bottom:170px;
+    left:48px;
+    margin-left: -40px;
+}
+.landscape .about-vsm li .vsm-about {
+    height: 190px;
+    width: 290px;
+    left:22px;
+    top:123px;
+    position: absolute;
+}
+.landscape .about-vsm .vsm-about-2 .vsm-about {
+    top:-67px;
+}
+.portrait .about-vsm li .vsm-about {
+    bottom: 5px;
+    height: 196px;
+    position: absolute;
+    width: 346px;
+}
+.portrait  .vsm-about-1 {
+}
+.portrait  .vsm-about-1 a {
+    background: url(../images/rgd/vsm1-v.png) no-repeat left top;
+    left: 25px;
+}
+.portrait  .vsm-about-2 a {
+    background: url(../images/rgd/vsm2-v.png) no-repeat left top;
+}
+.landscape .vsm-about-1 a {
+    background: url(../images/rgd/vsm2-h.png) no-repeat left top;
+}
+.landscape .vsm-about-2 a {
+    background: url(../images/rgd/vsm1-h.png) no-repeat left top;
+}
+.portrait  .vsm-about-1 a.act {
+    background: url(../images/rgd/vsm1-vh.png) no-repeat left top;
+    left: 25px;
+}
+.portrait  .vsm-about-2 a.act {
+    background: url(../images/rgd/vsm3-vh.png) no-repeat left top;
+}
+.landscape .vsm-about-1 a.act {
+    background: url(../images/rgd/vsm2-hh.png) no-repeat left top;
+}
+.landscape .vsm-about-2 a.act {
+    background: url(../images/rgd/vsm1-hh.png) no-repeat left top;
+}
+.about-vsm li {
+    width:268px;
+    margin-bottom: 36px;
+}
+.portrait .about-vsm li {
+    float: left;
+    width:327px;
+    margin-right: 16px;
+}
+.clear {
+    clear:both;
+}
+.portrait .vsm-v-1 {
+    background: url(../images/rgd/vsm_v-btn1.png) no-repeat 0 0 !important;
+}
+.portrait .vsm-v-2 {
+    background: url(../images/rgd/vsm_v-btn2.png) no-repeat 0 0 !important;
+}
+.landscape .vsm-v-1 {
+    background: url(../images/rgd/vsm_v-btn11.png) no-repeat 0 0 !important;
+}
+.landscape .vsm-v-2 {
+    background: url(../images/rgd/vsm_v-btn22.png) no-repeat 0 0 !important;
+}
+.about-vsm li .vsm-about {
+    display: block;
+    height: 155px;
+    width: 264px;
+}
+.about-vsm {
+    position: relative;
+    top:245px;
+}
+.vsm-1, .vsm-2 {
+    position: absolute;
+    right: 92px;
+    top: 188px;
+    width:539px;
+    height:353px;
+    display: none
+}
+.portrait .vsm-1, .portrait .vsm-2 {
+    right: 116px;
+    top: 245px;
+}
+.vsm-1 {
+    background: url(../images/rgd/vsm-1.png) no-repeat 0 0;
+}
+.vsm-2 {
+    background: url(../images/rgd/vsm-2.png) no-repeat 0 0;
+    display: none;
+}
+.portrait .vsm-1 {
+    background: url(../images/rgd/vsm-2.png) no-repeat 0 0;
+}
+.portrait .vsm-2 {
+    background: url(../images/rgd/vsm-1.png) no-repeat 0 0;
+}
+.gallery-wrap1 li img {
+    border-radius: 10px;
+}
+#rjd {
+    width:1024px;
+    height: 768px;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 9998;
+    display: none;
+}
+.skip {
+    font: bold 16px Arial;
+    text-decoration: underline;
+    color: #fff;
+    position:absolute;
+    z-index: 9999;
+    top:10px;
+    left:10px;
+    display: none;
+}
+
+.portrait .vsm-otstup {
+    padding-top: 35px;
+    height: 87px;
+}
+.landscape .allegro-btn, .landscape .sapsan-btn, .landscape .vsm-btn {
+    bottom: 58px;
+    height: 317px;
+    left: 87px;
+    position: absolute;
+    width: 278px;
+}
+.landscape .sapsan-btn {
+    left:374px;
+}
+.landscape .vsm-btn {
+    left:661px;
+}
+.portrait .allegro-btn, .portrait .sapsan-btn, .portrait .vsm-btn {
+    bottom: 262px;
+    height: 130px;
+    left: 34px;
+    position: absolute;
+    width: 699px;
+}
+.portrait .sapsan-btn {
+    bottom: 440px
+}
+.portrait .vsm-btn {
+   bottom: 82px;
+}

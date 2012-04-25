@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var width = document.body.clientWidth;
+            if (width > 768) {
+                document.write('<img src="images/preload/h/euro.jpg">');
+            } else {
+                document.write('<img src="images/preload/v/euro.jpg">');
+            }
+        </script>
+    </body>
+</html>

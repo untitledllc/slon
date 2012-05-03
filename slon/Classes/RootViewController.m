@@ -4,7 +4,6 @@
 #include <sys/sysctl.h>
 
 #define INDEX_FILE_NAME @"index.html"
-#define SCROLLVIEW_BGCOLOR colorWithRed:1 green:1 blue:1 alpha:1.0f
 
 @implementation RootViewController
 
@@ -83,8 +82,6 @@
             [preview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"book/preview-%d", 0] ofType:@"html"]isDirectory:NO]]];
             preview.hidden = NO;
         }
-
-        /*[full loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"book/full-%d", 0] ofType:@"html"]isDirectory:NO]]];*/
         
         [self.view addSubview:scrollView];
         
@@ -467,14 +464,17 @@
 }
 
 - (BOOL)loadWebView:(UIWebView*)webView withPage:(int)page {
-	
-	NSString *path = [NSString stringWithString:[pages objectAtIndex:page - 1]];
-    
-	if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
-		return YES;
-	}
-	return NO;
+    if(1 > page || 17 < page){
+        NSLog(@"NSRAngeException");
+        return NO;
+    } else {
+        NSString *path = [NSString stringWithString:[pages objectAtIndex:page - 1]];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+            return YES;
+        }
+    }
+    return NO;
 }
 
 #pragma mark - SCROLLVIEW
@@ -688,7 +688,6 @@
 
     if([ipadType isEqualToString:@"iPad2orHigher"]){
         [self.view bringSubviewToFront:preview];
-        //preview.hidden = NO;
         scrollView.hidden = YES;
     }
 }
@@ -704,8 +703,6 @@
     [self.view bringSubviewToFront:indexViewController.view];
     if([ipadType isEqualToString:@"iPad2orHigher"]){
         scrollView.hidden = NO;
-        //preview.hidden = YES;
-        //[preview removeFromSuperview];
     } else {
         [self addPageLoading:+1];
         [self addPageLoading:-1];
@@ -719,8 +716,9 @@
 
 - (void)viewDidUnload {
 	[super viewDidUnload];
-    
-    preview.delegate = nil;
+    if([ipadType isEqualToString:@"iPad2orHigher"]){
+        preview.delegate = nil;
+    }
     currPage.delegate = nil;
 	nextPage.delegate = nil;
 	prevPage.delegate = nil;

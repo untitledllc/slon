@@ -51,17 +51,6 @@
 				<string>Default-Portrait~ipad.png</string>
 			</array>
 		</dict>
-		<key>UINewsstandIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>Newsstand-Cover-Icon.png</string>
-			</array>
-			<key>UINewsstandBindingEdge</key>
-			<string>UINewsstandBindingEdgeLeft</string>
-			<key>UINewsstandBindingType</key>
-			<string>UINewsstandBindingTypeMagazine</string>
-		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>ru.hintsolutions.${PRODUCT_NAME:rfc1034identifier}</string>
@@ -87,12 +76,6 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>newsstand-content</string>
-	</array>
-	<key>UINewsstandApp</key>
 	<true/>
 	<key>UIStatusBarHidden</key>
 	<true/>

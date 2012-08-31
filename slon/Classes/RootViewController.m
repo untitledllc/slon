@@ -160,7 +160,7 @@
     scrollView.backgroundColor = [Utils colorWithHexString:@"#ffffff"];
     backgroundImageLandscape = [UIImage imageWithContentsOfFile:[path stringByAppendingPathComponent:@"images/background-landscape.png"]];
     backgroundImagePortrait = [UIImage imageWithContentsOfFile:[path stringByAppendingPathComponent:@"images/background-portrait.png"]];
-    NSArray *bookPages = [[NSArray alloc] initWithObjects:@"article-0.html",@"article-1.html",@"article-2.html",@"article-3.html",@"article-4.html",@"article-5.html",@"article-6.html",@"article-7.html",@"article-8.html",@"article-9.html",@"article-10.html",@"article-11.html",@"article-12.html",@"article-13.html",@"article-14.html",@"article-15.html",@"article-16.html", nil];
+    NSArray *bookPages = [[NSArray alloc] initWithObjects:@"article-0.html",@"article-1.html",@"article-2.html",@"article-3.html",@"article-4.html",@"article-5.html",@"article-6.html",@"article-7.html",@"article-8.html",@"article-9.html",@"article-10.html",@"article-11.html",@"article-12.html", nil];
     NSEnumerator *pagesEnumerator = [bookPages objectEnumerator];
     id page;
 
@@ -382,13 +382,6 @@
     //Отправляем в разные браузеры JS уведомления о перелистывании страницы
     [prevPage stringByEvaluatingJavaScriptFromString:@"pageClosed();"];
     [nextPage stringByEvaluatingJavaScriptFromString:@"pageClosed();"];
-    /*[currPage stringByEvaluatingJavaScriptFromString:@"pageOpened();"];
-
-    //для РЖД видео показываем только 1 раз
-    if(3 == currentPageNumber && YES == videoState){
-        [currPage stringByEvaluatingJavaScriptFromString:@"startVideo();"];
-        videoState = NO;
-    }*/
     
     if([ipadType isEqualToString:@"iPad2orHigher"]){
         [preview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"book/preview-%d", currentPageNumber - 1] ofType:@"html"]isDirectory:NO]]];
@@ -595,10 +588,7 @@
 #pragma mark - GESTURES
 - (void)userDidTap:(UITouch *)touch {
     if ((touch.tapCount%2) == 0) {
-        //блокируем оглавление на ржд
-        if(3 != currentPageNumber && 7 != currentPageNumber && 11 != currentPageNumber && 15 != currentPageNumber){
-            [self performSelector:@selector(toggleToc) withObject:nil];
-        }
+        [self performSelector:@selector(toggleToc) withObject:nil];
     }
 }
 

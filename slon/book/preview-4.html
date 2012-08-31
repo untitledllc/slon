@@ -3,146 +3,58 @@
     <head>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
-            <title>Slon • Человек-журнал</title>
+            <title>Slon • Почему я еврооптимист</title>
             
             <script src="js/jquery.js" type="text/javascript"></script>
             <script src="js/slon.js" type="text/javascript"></script>
             <script>
-                $.preLoadImages("images/article-2/v/1.jpg","images/article-2/h/1.jpg");
-                $.preLoadImages("images/article-2/v/2.jpg","images/article-2/h/2.jpg");
-                $.preLoadImages("images/article-2/v/3.jpg","images/article-2/h/3.jpg");
-                $.preLoadImages("images/article-2/v/4.jpg","images/article-2/h/4.jpg");
-                $.preLoadImages("images/article-2/v/5.jpg","images/article-2/h/5.jpg");
-                $.preLoadImages("images/article-2/v/6.jpg","images/article-2/h/6.jpg");
-                $.preLoadImages("images/article-2/v/7.jpg","images/article-2/h/7.jpg");
-                $.preLoadImages("images/article-2/v/8.jpg","images/article-2/h/8.jpg");
-                $.preLoadImages("images/article-2/v/9.jpg","images/article-2/h/9.jpg");
-                $.preLoadImages("images/article-2/v/10.jpg","images/article-2/h/10.jpg");
+                $.preLoadImages("images/article-3/v/1.jpg","images/article-3/h/1.jpg");
+                $.preLoadImages("images/article-3/v/2.jpg","images/article-3/h/2.jpg");
+                $.preLoadImages("images/article-3/v/3.jpg","images/article-3/h/3.jpg");
+                $.preLoadImages("images/article-3/v/4.jpg","images/article-3/h/4.jpg");
+                $.preLoadImages("images/article-3/v/5.jpg","images/article-3/h/5.jpg");
+                $.preLoadImages("images/article-3/v/6.jpg","images/article-3/h/6.jpg");
+                $.preLoadImages("images/article-3/v/7.jpg","images/article-3/h/7.jpg");
             </script>
             
             <link href="styles/slon.css" rel="stylesheet" type="text/css" />
             <style>
-                #page_1.landscape { background: url("images/article-2/h/1.jpg"); }
-                #page_1.portrait { background: url("images/article-2/v/1.jpg"); }
+                #page_1.landscape { background: url("images/article-3/h/1.jpg"); }
+                #page_1.portrait { background: url("images/article-3/v/1.jpg"); }
                 
-                #page_2.landscape { background: url("images/article-2/h/2.jpg"); }
-                #page_2.portrait { background: url("images/article-2/v/2.jpg"); }
+                #page_2.landscape { background: url("images/article-3/h/2.jpg"); }
+                #page_2.portrait { background: url("images/article-3/v/2.jpg"); }
                 
-                #page_3.landscape { background: url("images/article-2/h/3.jpg"); }
-                #page_3.portrait { background: url("images/article-2/v/3.jpg"); }
+                #page_3.landscape { background: url("images/article-3/h/3.jpg"); }
+                #page_3.portrait { background: url("images/article-3/v/3.jpg"); }
                 
-                #page_4.landscape { background: url("images/article-2/h/4.jpg"); }
-                #page_4.portrait { background: url("images/article-2/v/4.jpg"); }
+                #page_4.landscape { background: url("images/article-3/h/4.jpg"); }
+                #page_4.portrait { background: url("images/article-3/v/4.jpg"); }
                 
-                #page_5.landscape { background: url("images/article-2/h/5.jpg"); }
-                #page_5.portrait { background: url("images/article-2/v/5.jpg"); }
+                #page_5.landscape { background: url("images/article-3/h/5.jpg"); }
+                #page_5.portrait { background: url("images/article-3/v/5.jpg"); }
                 
-                #page_6.landscape { background: url("images/article-2/h/6.jpg"); }
-                #page_6.portrait { background: url("images/article-2/v/6.jpg"); }
+                #page_6.landscape { background: url("images/article-3/h/6.jpg"); }
+                #page_6.portrait { background: url("images/article-3/v/6.jpg"); }
                 
-                #page_7.landscape { background: url("images/article-2/h/7.jpg"); }
-                #page_7.portrait { background: url("images/article-2/v/7.jpg"); }
+                #page_7.landscape { background: url("images/article-3/h/7.jpg"); }
+                #page_7.portrait { background: url("images/article-3/v/7.jpg"); }
                 
-                #page_8.landscape { background: url("images/article-2/h/8.jpg"); }
-                #page_8.portrait { background: url("images/article-2/v/8.jpg"); }
-                
-                #page_9.landscape { background: url("images/article-2/h/9.jpg"); }
-                #page_9.portrait { background: url("images/article-2/v/9.jpg"); }
-                
-                #page_10.landscape { background: url("images/article-2/h/10.jpg"); }
-                #page_10.portrait { background: url("images/article-2/v/10.jpg"); }
+                #euroman.landscape { padding-top: 100px; padding-left: 35px; }
+                #euroman.portrait { padding-top: 30px; padding-left: 85px; }
                 </style>
             </head>
     <body>
     <div id="root">
-        <div class="page" id="page_1">&nbsp;</div>
+        <div class="page" id="page_1">
+            <img src="images/article-3/euro.gif" id="euroman">
+            &nbsp;</div>
         <div class="page" id="page_2">&nbsp;</div>
         <div class="page" id="page_3">&nbsp;</div>
         <div class="page" id="page_4">&nbsp;</div>
-        <div class="page" id="page_5">
-            <script>
-                cover = 1;
-                allCovers = 37;
-                
-                function prevCover(){
-                    if(cover < allCovers){
-                        cover++;
-                    } else {
-                        cover = 1;
-                    }
-                    $("#cover").attr("src", "images/article-2/page-5/cover-"+cover+".jpg");
-                }
-                
-                function nextCover(){
-                    if(cover > 1){
-                        cover--;
-                    } else {
-                        cover = allCovers;
-                    }
-                    $("#cover").attr("src", "images/article-2/page-5/cover-"+cover+".jpg");
-                }
-                </script>
-            <style>
-                #arrowleft.landscape {
-                    width: 65px;
-                    position: absolute;
-                    top: 627px;
-                    left: 47px;
-                }
-                #arrowleft.portrait {
-                    position: absolute;
-                    left: 94px;
-                    top: 347px;
-                    width: 65px;
-                }
-                
-                #arrowright.landscape {
-                    float: left;
-                    width: 65px;
-                    top: 627px;
-                    left: 304px;
-                    position: absolute;
-                }
-                #arrowright.portrait {
-                    position: absolute;
-                    left: 632px;
-                    top: 342px;
-                    width: 65px;
-                }
-                
-                #carousel.landscape {
-                    clear: both;
-                    padding-top: 164px;
-                }
-                #carousel.landscape img {
-                    margin-left: 44px;
-                }
-                #carousel.portrait {
-                    clear: both;
-                    padding-top: 64px;
-                }
-                #carousel.portrait img {
-                    margin-left: 230px;
-                }
-                .page {
-                    position: relative;
-                }
-                </style>
-            <div id="carousel">
-                <img id="cover" src="images/article-2/page-5/cover-1.jpg" style="width: 318px; height: 432px;">
-                    </div>
-            <div id="arrowleft">
-                <img src="images/article-2/arrow_left.png" onclick="prevCover();">
-                    </div>
-            <div id="arrowright">
-                <img src="images/article-2/arrow_right.png" onclick="nextCover();">
-                    </div>
-        </div>
+        <div class="page" id="page_5">&nbsp;</div>
         <div class="page" id="page_6">&nbsp;</div>
         <div class="page" id="page_7">&nbsp;</div>
-        <div class="page" id="page_8">&nbsp;</div>
-        <div class="page" id="page_9">&nbsp;</div>
-        <div class="page" id="page_10">&nbsp;</div>
     </div>
     </body>
 </html>

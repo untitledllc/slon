@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
-        <link href="styles/slon.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="styles/rgd.css">
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+            <title>Slon • Синдром троечников</title>
+            
+            <script src="js/jquery.js" type="text/javascript"></script>
+            <script src="js/slon.js" type="text/javascript"></script>
+            <script>
+                $.preLoadImages("images/article-1/v/1.jpg","images/article-1/h/1.jpg");
+                $.preLoadImages("images/article-1/v/2.jpg","images/article-1/h/2.jpg");
+                $.preLoadImages("images/article-1/v/3.jpg","images/article-1/h/3.jpg");
+                $.preLoadImages("images/article-1/v/4.jpg","images/article-1/h/4.jpg");
+                $.preLoadImages("images/article-1/v/5.jpg","images/article-1/h/5.jpg");
+                $.preLoadImages("images/article-1/v/6.jpg","images/article-1/h/6.jpg");
+                $.preLoadImages("images/article-1/v/7.jpg","images/article-1/h/7.jpg");
+                $.preLoadImages("images/article-1/v/8.jpg","images/article-1/h/8.jpg");
+                $.preLoadImages("images/article-1/v/9.jpg","images/article-1/h/9.jpg");
+            </script>
+            
+            <link href="styles/slon.css" rel="stylesheet" type="text/css" />
+            <style>
+                #page_1.landscape { background: url("images/article-1/h/1.jpg"); }
+                #page_1.portrait { background: url("images/article-1/v/1.jpg"); }
                 
-        <script src="js/jquery.js" type="text/javascript"></script>
-        <script src="js/slon.js" type="text/javascript"></script>
-        <script src="js/rgd.js" type="text/javascript"></script>
-    </head>
+                #page_2.landscape { background: url("images/article-1/h/2.jpg"); }
+                #page_2.portrait { background: url("images/article-1/v/2.jpg"); }
+                
+                #page_3.landscape { background: url("images/article-1/h/3.jpg"); }
+                #page_3.portrait { background: url("images/article-1/v/3.jpg"); }
+                
+                #page_4.landscape { background: url("images/article-1/h/4.jpg"); }
+                #page_4.portrait { background: url("images/article-1/v/4.jpg"); }
+                
+                #page_5.landscape { background: url("images/article-1/h/5.jpg"); }
+                #page_5.portrait { background: url("images/article-1/v/5.jpg"); }
+                
+                #page_6.landscape { background: url("images/article-1/h/6.jpg"); }
+                #page_6.portrait { background: url("images/article-1/v/6.jpg"); }
+                
+                #page_7.landscape { background: url("images/article-1/h/7.jpg"); }
+                #page_7.portrait { background: url("images/article-1/v/7.jpg"); }
+                
+                #page_8.landscape { background: url("images/article-1/h/8.jpg"); }
+                #page_8.portrait { background: url("images/article-1/v/8.jpg"); }
+                
+                #page_9.landscape { background: url("images/article-1/h/9.jpg"); }
+                #page_9.portrait { background: url("images/article-1/v/9.jpg"); }
+                </style>
+            </head>
     <body>
     <div id="root">
-        <div class="page" id="page_1">
-            <div class="start ps">
-                <div class="header">
-                    <div class="logo"></div>
-                </div>
-                <div class="menu">
-                    <a class="video-rgd" href="#"></a>
-                </div>
-                <div class="content">
-                    <div class="intro-text">
-                        <span>Национальная Система Высокоскоростного Движения (НСВД)</span> – это совокупность железнодорожной инфраструктуры (магистрали, подвижной состав и т.д.) в пределах государства, позволяющая организовать движение поездов со скоростью от 200 км/ч. В России создание национальной системы высокоскоростного движения является стратегическим проектом ОАО «Российские железные дороги». Появление Национальной Системы Высокоскоростного Движения позволит сблизить города и повысить мобильность россиян.
-                    </div>
-                    <ul class="intro-list">
-                        <li class="list-item">
-                            <a href="article-6.html">
-                                <img src="images/rgd/sapsan-v-h.png" alt="allegro" />
-                                <img class="v-v" src="images/rgd/sapsan-v-v.png" alt="allegro" />
-                                <div class="item-name">Сапсан</div>
-                                <div class="item-description">«Сапсан» - самый быстрый поезд в России. Он связывает Москву с Санкт-Петербургом и Нижним Новгородом. Скорость «Сапсана» достигает 250 км в час.</div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="article-10.html">
-                                <img src="images/rgd/allegro-v-h.png" alt="allegro" />
-                                <img class="v-v" src="images/rgd/allegro-v-v.png" alt="allegro" />
-                                <div class="item-name">Аллегро</div>
-                                <div class="item-description">Аллегро - скоростной
-                                    экспресс. Первый поезд "Аллегро" отправился по маршруту Санк-Петербург - Хельсинки в декабре 2010 года. </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="article-14.html">
-                                <img src="images/rgd/vsm-v-h.png" alt="allegro" />
-                                <img class="v-v" src="images/rgd/vsm-v-v.png" alt="allegro" />
-                                <div class="item-name vsm-otstup">Что такое ВСМ?</div>
-                                <div class="item-description">ВСМ - Высокоскоростные магистрали - это железнодорожная
-                                    инфраструктура, обеспечивающая движение поездов со скоростью не менее 200 км/ч. </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <div class="page" id="page_1">&nbsp;</div>
+        <div class="page" id="page_2">&nbsp;</div>
+        <div class="page" id="page_3">&nbsp;</div>
+        <div class="page" id="page_4">&nbsp;</div>
+        <div class="page" id="page_5">&nbsp;</div>
+        <div class="page" id="page_6">&nbsp;</div>
+        <div class="page" id="page_7">&nbsp;</div>
+        <div class="page" id="page_8">&nbsp;</div>
+        <div class="page" id="page_9">&nbsp;</div>
     </div>
     </body>
 </html>
